@@ -25,7 +25,10 @@ Fonts are separated by a | */
   --nav-hover-link-color: black;
   --nav-hover-background-color: #C8C8C8;
 }
-
+.products img {
+  max-width: 10em;
+  max-height: 10em;
+}
 #logo {
     max-width: 20em;
     max-height: 20em;
@@ -42,6 +45,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  max-width: 40em;
+  max-height: 30em;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
