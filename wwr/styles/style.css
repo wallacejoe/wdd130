@@ -247,6 +247,125 @@ main section img {
     transform: scale(1.1)
 }
 
+/*Rivers Page*/
+
+#content2 {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#rivers-msg {
+    text-align: center;
+    background-color: #3C91E6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 80px;
+}
+
+.rivers-title {
+    font-family: "Noto Serif", Arial, "Times New Roman";
+    color: #FFC482;
+    margin-top: 5px;
+}
+
+.salmon-river, .desolation-river, .grand-canyon-river {
+    border: 3px solid #FFC482;
+}
+
+.salmon-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin-bottom: 80px;
+}
+
+#salmon-background {
+    background-color: #69995D;
+    grid-row: 1/13;
+    grid-column: 1/21;
+}
+
+.salmon-river {
+    grid-row: 2/10;
+    grid-column: 2/4;
+}
+
+.salmon-text {
+    background-color: #3C91E6;
+    font-size: 0.7em;
+    grid-row: 2/10;
+    grid-column: 7/20;
+    padding: 2em;
+    align-self: center;
+}
+
+.salmon-text p {
+    text-align: left;
+}
+
+.desolation-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin-bottom: 80px;
+}
+
+#desolation-background {
+    background-color: #69995D;
+    grid-row: 1/13;
+    grid-column: 1/21;
+}
+
+.desolation-river {
+    grid-row: 2/10;
+    grid-column: 16/20;
+}
+
+.desolation-text {
+    background-color: #3C91E6;
+    font-size: 0.7em;
+    grid-row: 2/10;
+    grid-column: 2/15;
+    padding: 2em;
+    align-self: center;
+}
+
+.desolation-text p {
+    text-align: left;
+}
+
+.grand-canyon-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+#grand-canyon-background {
+    background-color: #69995D;
+    grid-row: 1/13;
+    grid-column: 1/21;
+}
+
+.grand-canyon-river {
+    max-width: 18em;
+    max-height: 14em;
+    grid-row: 2/10;
+    grid-column: 2/4;
+}
+
+.grand-canyon-text {
+    background-color: #3C91E6;
+    font-size: 0.7em;
+    grid-row: 2/10;
+    grid-column: 7/20;
+    padding: 2em;
+    align-self: center;
+}
+
+.grand-canyon-text p {
+    text-align: left;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
