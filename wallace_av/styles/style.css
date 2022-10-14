@@ -306,7 +306,9 @@ footer .social img {
         display: none;
     }
     footer {
+        display: block;
         margin-top: 25px;
+        text-align: center;
     }
     .home-img {
         margin-bottom: -10px;
@@ -322,4 +324,8 @@ footer .social img {
     .package-grid {
         display: block;
     }
+    .social {
+        padding: 0px;
+        margin: 0;
+    }    
 }
