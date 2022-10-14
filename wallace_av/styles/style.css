@@ -1,4 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&family=Rubik&display=swap');
+
+/*For all pages*/
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 1600px;
+}
+
+nav a:hover {
+    background-color: #C8C8C8;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    background-color:#45503B;
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+.logo {
+    margin: 1em;
+    max-width: 7em;
+    max-height: 7em;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav a {
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 40px;
+}
+
+p {
+    color: #69140E;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+h1, h2, h4 {
+    color: #F30B0B;
+    font-family: Rubik, Arial, "Times New Roman";
+}
+
+footer h3 {
+    font-family: Roboto, Helvetica, sans-serif;
+    color: black;
+}
+
+footer a {
+    margin-left: 80px;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F30B0B;
+}
+
+footer p {
+    margin-right: 80px;
+    color: white;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 25px 50px;
+    background-color: #45503B;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img {
+    width: 6em;
+    margin-left: -30px;
+    padding-top: 15px;
+}
+
+.social {
+    padding: 0px 20px;
+    margin-right: -80px;
+}
+
+/*Home page*/
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 400px 400px;
+}
+
+#hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#hero-msg {
+    font-family: Rubik, Arial, "Times New Roman";
+    font-size: 1.6em;
+    color: #F30B0B;
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.home-title {
+    margin-bottom: 40px;
+}
+
+#hero-msg h4 {
+    text-align: center;
+}
+
+.home-grid {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 4fr 1fr;
+    grid-template-rows: 2fr 7fr 14fr 7fr 2fr;
+}
+
+#background {
+    background-color: #45503B;
+    grid-column: 1/6;
+    grid-row: 1/7;
+}
+
+.home-img {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.home-msg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+    font-size: 1.7em;
+    background-color: #C8C8C8;
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+.home-msg h2 {
+    margin-top: 80px;
+    grid-column: 2/6;
+    grid-row: 1/2;
+}
+
+.home-msg p {
+    text-align: left;
+    grid-column: 2/6;
+    grid-row: 2/4;
+}
+
+.home-msg .rent {
+    margin-left: -50px;
+    margin-bottom: 80px;
+    margin-top: -10px;
+    margin-right: 80px;
+    font-size: 1.5em;
+    padding-top: 35px;
+    background-color: #45503B;
+    text-decoration: none;
+    color: white;
+    grid-column: 4/6;
+    grid-row: 4/5;
+}
+
+.home-msg .rent:hover {
+    color: black;
+    background-color: #C8C8C8;
+}
+
+
+
+/*Mobile screen type*/
+@media screen and (max-width: 900px) {
+    #hero, .home-grid, .footer-grid, .home-msg {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+        margin-bottom: -100px;
+    }
+    #hero-msg h2 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #F30B0B;
+    }
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    .home-img {
+        margin-bottom: -10px;
+    }
+    .home-msg {
+        padding: 40px;
+    }
+    .home-msg .rent {
+        padding: 10px;
+        text-align: center;
+        margin: 0px;
+    }
 }
