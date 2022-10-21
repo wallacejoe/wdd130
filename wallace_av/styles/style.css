@@ -275,6 +275,129 @@ footer .social img {
     background-color: #C8C8C8;
 }
 
+/*Products page*/
+
+.heading-text {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #C8C8C8;
+    margin: 120px 200px;
+    padding: 20px 100px 25px 100px;
+}
+
+.package-link {
+    text-decoration: none;
+    background-color: #45503B;
+    color: white;
+    padding: 10px 30px;
+}
+
+.package-link:hover {
+    background-color: #C8C8C8;
+    color: black;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-img-wide {
+    width: 150px;
+    height: 70px;
+}
+
+.products-grid {
+    margin: 0px 280px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.product {
+    display: grid;
+    width: 105px;
+    height: 200px;
+    justify-items: center;
+    align-items: center;
+    background-color: #C8C8C8;
+    margin-bottom: 25px;
+    padding-bottom: 3px;
+    transition: .5s;
+}
+
+
+.product:hover, .product-wide:hover {
+    transform: scale(1.3);
+}
+
+.rental-link {
+    text-decoration: none;
+    background-color: #45503B;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 0.7em;
+    height: 40px;
+    width: 100px;
+}
+
+.rental-link:hover {
+    background-color: #C8C8C8;
+    color: black;
+}
+
+.rental-text {
+    background-color: #C8C8C8;
+    color: #F30B0B;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-wide {
+    display: grid;
+    width: 155px;
+    height: 160px;
+    justify-items: center;
+    align-items: center;
+    background-color: #C8C8C8;
+    margin-bottom: 25px;
+    padding-bottom: 3px;
+    transition: .5s;
+}
+
+.rental-link-wide {
+    text-decoration: none;
+    background-color: #45503B;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 0.7em;
+    height: 30px;
+    width: 150px;
+}
+
+.rental-link-wide:hover {
+    background-color: #C8C8C8;
+    color: black;
+}
+
+.rental-text-wide {
+    background-color: #C8C8C8;
+    color: #F30B0B;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.added-info {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #C8C8C8;
+    margin: 100px 200px;
+    padding: 20px 100px 25px 100px;
+}
 /*Mobile screen type*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid, .footer-grid, .home-msg {
